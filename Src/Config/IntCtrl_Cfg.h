@@ -19,7 +19,12 @@
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT MACROS
  *********************************************************************************************************************/
-
+#define GROUP_SUBGROUB_PRIORITY_XXX                          0
+#define GROUP_SUBGROUB_PRIORITY_XXY                          5
+#define GROUP_SUBGROUB_PRIORITY_XYY                          6
+#define GROUP_SUBGROUB_PRIORITY_YYY                          7
+#define GROUP_SUBGROUB_PRIORITY                 GROUP_SUBGROUB_PRIORITY_XXX
+#define NUM_OF_ACTIVE_INTERRUPT 		                     1
 
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION MACROS

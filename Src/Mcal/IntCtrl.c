@@ -54,12 +54,13 @@
 *******************************************************************************/
 void IntCrtl_Init(void)
 {
-
+    /*enable global interrupt*/
+	__asm("CPSIE i \n");
 	/*TODO Configure Grouping\SubGrouping System in APINT register in SCB*/
-    APINT = 0xFA05|0x00001234;
+    APINT = 0xFA05|(GROUP_SUBGROUB_PRIORITY<<8);
     
     /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/  
-
+    
 
 	/*TODO : Enable\Disable based on user configurations in NVIC_ENx and SCB_Sys Registers */
 
